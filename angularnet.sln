@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "angularnet", "angularnet\angularnet.csproj", "{7E6B026C-8AA4-464F-AFBF-22885FB86395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "angularnet", "angularnet\angularnet.csproj", "{7E6B026C-8AA4-464F-AFBF-22885FB86395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataService", "DataService\DataService.csproj", "{63A8ABD9-D6B9-4ABD-8D10-FF234BE842CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7E6B026C-8AA4-464F-AFBF-22885FB86395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E6B026C-8AA4-464F-AFBF-22885FB86395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E6B026C-8AA4-464F-AFBF-22885FB86395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A8ABD9-D6B9-4ABD-8D10-FF234BE842CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A8ABD9-D6B9-4ABD-8D10-FF234BE842CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A8ABD9-D6B9-4ABD-8D10-FF234BE842CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A8ABD9-D6B9-4ABD-8D10-FF234BE842CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

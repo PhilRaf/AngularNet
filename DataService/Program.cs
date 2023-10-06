@@ -1,7 +1,9 @@
-using angularnet.Implement;
-using angularnet.Interface;
+using DataService.DBcontext;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-namespace angularnet
+namespace DataService
 {
     public class Program
     {
@@ -9,13 +11,17 @@ namespace angularnet
         {
             var builder = WebApplication.CreateBuilder(args);
 
+     //       builder.Services.AddDbContext<MagazzinoDbContext>(options =>
+     //options.UseSqlServer(builder.Configuration.GetConnectionString("NomeDatabase")));
+
+            builder.Services.AddDbContext<MagazzinoDbContext>(ServiceLifetime.Transient);
             // Add services to the container.
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddTransient<IPricing, ImPricing>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
